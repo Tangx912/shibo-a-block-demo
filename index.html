@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111b23" />
+    <title>世博 A 地块 · 3D 场景</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="scene"></div>
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">A</span><div><strong>世博 A 地块</strong><small>SHANGHAI EXPO · ZHOUJIADU</small></div></div>
+        <div class="top-meta"><span class="live-dot"></span> 3D 场景浏览 <i></i> 上海 · 浦东</div>
+      </header>
+      <aside class="left-panel">
+        <p class="eyebrow">MASTERPLAN / 01</p>
+        <h1>滨江金融<br><em>与城市文化</em></h1>
+        <p class="intro">沿黄浦江而生的世博核心片区。探索金融办公组团、滨水空间与世博地标。</p>
+        <div class="stats"><div><b>23</b><span>楼宇地块</span></div><div><b>2</b><span>滨水界面</span></div><div><b>2010</b><span>世博记忆</span></div></div>
+        <div class="legend-title">场景图层</div>
+        <label class="switch-row"><span class="legend-chip chip-tower"></span><span>楼宇与地块</span><input id="buildings-toggle" type="checkbox" checked /><i class="switch"></i></label>
+        <label class="switch-row"><span class="legend-chip chip-label"></span><span>楼宇名称</span><input id="labels-toggle" type="checkbox" checked /><i class="switch"></i></label>
+        <label class="switch-row"><span class="legend-chip chip-road"></span><span>道路名称</span><input id="roads-toggle" type="checkbox" checked /><i class="switch"></i></label>
+        <div class="hint"><span>⌖</span> 拖拽旋转 · 滚轮缩放 · 右键平移</div>
+      </aside>
+      <aside class="info-card" id="info-card" aria-live="polite">
+        <button id="close-info" aria-label="关闭">×</button>
+        <span class="info-kicker">SELECTED PARCEL</span><h2 id="info-name">点击任一地块</h2>
+        <p id="info-desc">选择建筑后查看片区定位信息。</p>
+        <div class="info-rule"></div><div class="info-foot"><span id="info-tag">世博 A 地块</span><span id="info-height">楼宇信息</span></div>
+      </aside>
+      <div class="compass"><span>N</span><div class="needle"></div></div>
+      <div class="bottom-left"><span class="scale-line"></span> 示意模型 · 非测绘成果</div>
+      <div class="bottom-right"><button id="overview" class="overview"><span>⌂</span> 回到总览</button></div>
+      <div class="loading" id="loading">正在载入世博 A 地块…</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
